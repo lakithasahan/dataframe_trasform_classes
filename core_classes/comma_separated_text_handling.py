@@ -3,11 +3,13 @@ class comma_separated_handling_class():
     def __init__(self, df):
         self.df = df
 
+    # main function that iterates through each column in a sheet
     def main(self):
         list_of_columns = list(self.df.columns)
 
         print(list_of_columns)  # testing code
 
+        # calls remove_commas for each column in the sheet
         for column in list_of_columns:
             self.remove_commas(column)
 
